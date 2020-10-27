@@ -43,8 +43,7 @@ font-size: 22px;
 margin-bottom: 40px;
 }
 
-.mainform,
-.secondaryform{
+.mainform{
   margin: 0px 15px 0 15px;
 
 
@@ -66,8 +65,7 @@ margin: 12px;
 
 .seperator,
 .seperator2{
-border-top-color: rgb(105, 198, 115);
-
+  border-top-color: rgb(105, 198, 115);
   border-style: solid;
   padding: 1px;
   margin:45px 7px;
@@ -180,7 +178,7 @@ div{
 display: flex;
 
 }
-div > input, select{
+.firstfieldset input, select{
   display: inline-block;
       width: 74%;
 float: right;
@@ -190,7 +188,7 @@ display: flex;
 
 }
 
-div > label{
+.firstfieldset label{
         display: inline-block;
         text-align: left;
         width: 25%;
@@ -200,3 +198,47 @@ div > label{
 
             }
  }
+
+ fieldset{
+   border-color: rgba(105, 198, 115,0.2);
+
+
+ }
+
+.firstfieldset input{
+ height:50px;
+  transition-property: border, height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+
+
+}
+ input:focus{
+   background-color: rgba(105, 198, 115,0.8);
+   outline:none;
+   border-width: medium;
+   border-style: solid;
+   border-color: darkblue;
+   height:75px;
+
+
+
+ }
+
+
+ body{
+   background-color: rgba(0, 0, 0, 0.02);
+
+ }
+ .secondfieldset > div{
+   margin-bottom:15px;
+
+
+ }
+
+.secondfieldset input[type="radio"]{
+  margin-bottom: 15px;
+
+
+}

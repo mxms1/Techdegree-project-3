@@ -26,30 +26,32 @@
 <div class="seperator"></div>
 
 <form class="mainform clearfix" action="index.html" method="post">
-  <h1 class="title">Contact Information</h1><br>
+  <fieldset class="firstfieldset">
+    <legend class="title">Contact Information</legend>
+
   <div>
       <label for="name">Full Name</label><br>
-      <input type="text" name="name" id="name" placeholder="Required">
+      <input type="text" name="name" id="name" placeholder="Required" required>
   </div>
 
   <div>
     <label for="email">Email Address</label><br>
-    <input type="tel" name="email" id="email" placeholder="Required">
+    <input type="email" name="email" id="email" placeholder="Required" required>
   </div>
 
   <div>
     <label for="phone">Phone number</label><br>
-    <input type="text" name="phone" id="phone">
+    <input type="tel" name="phone" id="phone" placeholder="ex.07990995872">
   </div>
 
   <div>
       <label for="street">Street Address</label><br>
-      <input type="text" name="street" id="street">
+      <input type="text" name="street" id="street" placeholder="ex.Little Marco Street">
   </div>
 
     <div>
         <label for="city">City</label><br>
-        <input type="text" name="city" id="city">
+        <input type="text" name="city" id="city" placeholder="ex.New York">
     </div>
 
       <div>
@@ -131,46 +133,56 @@
   <option value="AA">Armed Forces Americas</option>
 <option value="AP">Armed Forces Pacific</option>
 <option value="AE">Armed Forces Others</option>
+
 </optgroup>
 </select>
 </div>
+
 <div>
           <label for="zip">Zip Code</label><br>
-            <input type="text" name="zip" id="zip">
+            <input type="text" name="zip" id="zip" placeholder="ex.99501">
             </div>
-</form>
+          </fieldset>
+
 
 <div class="seperator2"></div>
 
-<form class="secondaryform" action="index.html" method="post">
-  <h1 class="title">Newsletter</h1>
-  <p class="formtitle">Select the newsletters you would like to receive</p>
+<fieldset class="secondfieldset">
+  <legend class="title">
+  Newsletter
+</legend>
+<p class="formtitle">Select the newsletters you would like to receive</p>
 
-
-
-
+<div>
   <label for="htmlnews">
-<input type="checkbox" name="htmlnews" value="htmlnews">HTML News</label><br>
-
-
-<label for="cssnews">
-<input type="checkbox" name="cssnews" value="cssnews">CSS News</label><br>
-
-
-<label for="javascriptnews">
-<input type="checkbox" name="javascriptnews" value="javascriptnews">Javascript News</label><br>
+  <input type="checkbox" name="news" value="htmlnews">HTML News</label><br>
+</div>
+<div>
+  <label for="cssnews">
+    <input type="checkbox" name="news" value="cssnews">CSS News</label><br>
+</div>
+<div>
+  <label for="javascriptnews">
+    <input type="checkbox" name="news" value="javascriptnews">Javascript News</label><br>
+</div>
 
 <p class="formtitle">Newsletter format</p>
 
-<input type="radio" name="format" value="htmlformat">
-<label for="htmlformat">HTML</label><br>
+<section>
 
 
-<input type="radio" name="format" value="plainformat">
-<label for="plainformat">Plain Text</label>
+  <input type="radio" name="format" value="htmlformat">
+  <label for="htmlformat">HTML</label><br>
+</section>
+<section>
+  <input type="radio" name="format" value="plainformat">
+  <label for="plainformat">Plain Text</label>
+</section>
 
 <p class="formtitle">Other topics you'd like to hear about:</p>
+
 <textarea name="othertopics" rows="8" cols="80"></textarea>
+</fieldset>
 <button type="button" name="button">Sign Up</button>
 
 </form>
