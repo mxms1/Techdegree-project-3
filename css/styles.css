@@ -264,7 +264,7 @@ input:invalid:not(:focus):not(:placeholder-shown)  {
         border-bottom-color: red;
         border-bottom-style: solid;
         background: rgba(150, 0, 0,0.1);
-        background-position-x: calc(100% - 14px);
+      
 
 
 
