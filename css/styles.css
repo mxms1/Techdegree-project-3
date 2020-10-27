@@ -49,7 +49,7 @@ margin-bottom: 40px;
 
 }
 
-section>h1{
+section>h1,h2{
 text-align: center;
 margin: 30px 15px 15px 15px;
 font-size: 20px;
@@ -127,6 +127,7 @@ background-position-x: calc(100% - 14px);
 
 .formtitle{
   padding: 20px 0;
+  font-weight: 300;
 
 }
 
@@ -239,6 +240,19 @@ display: flex;
 
 .secondfieldset input[type="radio"]{
   margin-bottom: 15px;
+
+
+}
+
+input:valid:not(:focus):not(:placeholder-shown)  {
+
+        border-bottom: 10px;
+        border-radius: 10px;
+        border-bottom-color: green;
+        border-bottom-style: solid;
+        background: url('../images/icons/check1.png') no-repeat right rgba(105, 198, 115,0.2);
+        background-position-x: calc(100% - 14px);
+
 
 
 }

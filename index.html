@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>The Code Review</title>
-      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Open+Sans:400,600,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700Open+Sans:400,600,700" rel="stylesheet">
       <link rel="stylesheet" href="css/normalise.css">
       <link rel="stylesheet" href="css/styles.css">
       <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -18,10 +18,10 @@
 <h1 class="maintitletext">The Code Review</h1>
 </header>
 <section class="everything">
-<section>
-  <h1>Signup for our newsletter</h1>
+
+  <h2>Signup for our newsletter</h2>
   <p>Get the latest news on how your code is doing right in your inbox</p>
-</section>
+
 
 <div class="seperator"></div>
 
@@ -31,33 +31,33 @@
 
   <div>
       <label for="name">Full Name</label><br>
-      <input type="text" name="name" id="name" placeholder="Required" required>
+      <input minlength="2" required type="text" name="name" id="name" placeholder="Required" >
   </div>
 
   <div>
     <label for="email">Email Address</label><br>
-    <input type="email" name="email" id="email" placeholder="Required" required>
+    <input required type="email" name="email" id="email" placeholder="Required" >
   </div>
 
   <div>
     <label for="phone">Phone number</label><br>
-    <input type="tel" name="phone" id="phone" placeholder="ex.07990995872">
+    <input  minlength="9" type="tel" name="phone" id="phone" placeholder="ex.07990995872">
   </div>
 
   <div>
       <label for="street">Street Address</label><br>
-      <input type="text" name="street" id="street" placeholder="ex.Little Marco Street">
+      <input minlength="4" type="text" name="street" id="street" placeholder="ex.Little Marco Street">
   </div>
 
     <div>
         <label for="city">City</label><br>
-        <input type="text" name="city" id="city" placeholder="ex.New York">
+        <input minlength="3" type="text" name="city" id="city" placeholder="ex.New York">
     </div>
 
       <div>
          <label for="state">State</label><br>
 
-         <select name="state" class="select">
+         <select name="state" class="select" id="state">
 
 
 
@@ -140,7 +140,7 @@
 
 <div>
           <label for="zip">Zip Code</label><br>
-            <input type="text" name="zip" id="zip" placeholder="ex.99501">
+            <input minlength="3" type="text" name="zip" id="zip" placeholder="ex.99501">
             </div>
           </fieldset>
 
@@ -155,27 +155,25 @@
 
 <div>
   <label for="htmlnews">
-  <input type="checkbox" name="news" value="htmlnews">HTML News</label><br>
+  <input type="checkbox" name="news" value="htmlnews" id="htmlnews">HTML News</label><br>
 </div>
 <div>
   <label for="cssnews">
-    <input type="checkbox" name="news" value="cssnews">CSS News</label><br>
+    <input type="checkbox" name="news" value="cssnews" id="cssnews">CSS News</label><br>
 </div>
 <div>
   <label for="javascriptnews">
-    <input type="checkbox" name="news" value="javascriptnews">Javascript News</label><br>
+    <input type="checkbox" name="news" value="javascriptnews" id="javascriptnews">Javascript News</label><br>
 </div>
 
-<p class="formtitle">Newsletter format</p>
-
 <section>
+<h4 class="formtitle">Newsletter format</h4>
 
-
-  <input type="radio" name="format" value="htmlformat">
+  <input type="radio" name="format" value="htmlformat" id="htmlformat">
   <label for="htmlformat">HTML</label><br>
-</section>
-<section>
-  <input type="radio" name="format" value="plainformat">
+
+
+  <input type="radio" name="format" value="plainformat" id="plainformat">
   <label for="plainformat">Plain Text</label>
 </section>
 
@@ -189,5 +187,5 @@
 <footer>
 <p>Copyright The Code Review</p>
 </footer>
-</body>
 </section>
+</body>
